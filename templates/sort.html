@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Toy Tweets</title>
+    
+    <style type="text/css">
+    body
+        {
+                margin: 45px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+                font-size: 12px;
+        }
+    
+    h1
+        {
+                padding: 10px 8px;
+                color: #FF8000;
+        }
+                
+    #hor-zebra
+        {
+                width: 900px;
+                text-align: left;
+                border-collapse: collapse;
+        }
+    #hor-zebra th
+        {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 10px 8px;
+                color: #039;
+        }
+    #hor-zebra td
+        {
+                padding: 8px;
+                color: #669;
+        }
+    #hor-zebra tr:nth-child(even)
+        {
+                background: #e8edff; 
+        }
+    #hor-zebra tbody tr:hover td, a:hover
+        {
+                color: #FF8000;
+                cursor: pointer;
+        }
+    a
+        {
+                text-decoration: none;
+                color: #669;
+        }
+        
+    </style>
+<script type=text/javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("tr").click(function() {
+                url = $(this).attr("url");
+                window.open(url,'new window');
+                });
+            });
+    </script>
+</head>
+<body>
+
+<h1>DTLA</h1>
+
+
+<table id="hor-zebra">
+    <thead>
+    	<tr>
+            <th scope="col">Tweet ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Tweet</th>
+            <th scope="col">Date</th>
+            <th scope="col">Location</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{ sorted_tweets }}
+    </tbody>
+</table>
+
+
+    
+    
+
+</body>
+</html>
+
+

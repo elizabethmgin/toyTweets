@@ -1,0 +1,45 @@
+body
+    {
+            margin: 45px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            font-size: 12px;
+    }
+
+h1
+    {
+            padding: 10px 8px;
+            color: #FF8000;
+    }
+            
+#hor-zebra
+    {
+            width: 800px;
+            text-align: left;
+            border-collapse: collapse;
+    }
+#hor-zebra th
+    {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px 8px;
+            color: #039;
+    }
+#hor-zebra td
+    {
+            padding: 8px;
+            color: #669;
+    }
+#hor-zebra tr:nth-child(even)
+    {
+            background: #e8edff; 
+    }
+#hor-zebra tbody tr:hover td, a:hover
+    {
+            color: #FF8000;
+            cursor: pointer;
+    }
+a
+    {
+            text-decoration: none;
+            color: #669;
+    }
